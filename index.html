@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mirror File Browser</title>
+  <title>Archive File Browser</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; }
     h1 { font-size: 24px; }
@@ -14,14 +14,14 @@
   </style>
 </head>
 <body>
-  <h1>Mirror File Browser</h1>
+  <h1>🗃 Archive File Browser</h1>
   <div class="breadcrumb" id="breadcrumb"></div>
   <div id="content">Loading directory contents...</div>
 
   <script>
     const BASE_DIR = ''; // If using a catalog (like docs) change this to it's name
     const GITHUB_API = 'https://api.github.com/repos/klydraproject/archive/contents/';
-    const MIRROR_URL = 'https://mirror.leon8326.org/'; // What's the website the files are hosted on? https://raw.githubusercontent.com/[repo]/main/ is recommended
+    const MIRROR_URL = 'http://archive.wheedev.org/'; // What's the website the files are hosted on? https://raw.githubusercontent.com/[repo]/main/ is recommended
     
     const params = new URLSearchParams(window.location.search);
     let currentDir = params.get('dir') || BASE_DIR;
